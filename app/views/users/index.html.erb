@@ -1,0 +1,14 @@
+<h1>Contact List</h1>
+
+<h3><%= link_to "+ Add New Contact", new_user_path %></h3>
+
+<br/>
+
+<div class="contact-list">
+<% @users.each do |user| %>
+  <div class="contact">
+      <div class="name"><%= user.name %></div>
+      <div class="clear"></div>
+  </div>
+<% end %>
+</div>
